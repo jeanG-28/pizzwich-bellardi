@@ -91,6 +91,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
 }
 .topbar__status { color: var(--yellow); font-weight: 600; }
+.topbar__item a { color: #fff; font-weight: 600; text-decoration: none; }
+.topbar__item a:hover { color: var(--yellow); }
 
 /* Header */
 .header {
@@ -249,6 +251,15 @@ ul { margin: 0; padding: 0; list-style: none; }
 .carte__note { text-align: center; font-weight: 600; color: var(--muted); margin-bottom: 16px; }
 .carte__cta { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
 
+.prix { max-width: 640px; margin: 0 auto 36px; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 30px 32px; border-top: 5px solid var(--red); }
+.prix__title { font-family: var(--font-display); text-transform: uppercase; font-weight: 400; font-size: 1.3rem; color: var(--violet-dark); margin: 0 0 16px; text-align: center; }
+.prix__table { width: 100%; border-collapse: collapse; }
+.prix__table td { padding: 10px 4px; border-bottom: 1px dashed #e7dfef; font-size: .95rem; }
+.prix__table tr:last-child td { border-bottom: none; }
+.prix__table td:first-child { color: var(--ink); font-weight: 500; }
+.prix__table td:last-child { text-align: right; font-weight: 700; color: var(--red); white-space: nowrap; }
+.prix__disclaimer { text-align: center; font-size: .8rem; color: var(--muted); margin: 18px 0 0; }
+
 /* Formules (dark poster style) */
 .formules { background: var(--violet-deep); }
 .formules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
@@ -282,7 +293,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hours td { padding: 12px 18px; border-bottom: 1px solid #eee0c9; font-size: .95rem; }
 .hours td:first-child { font-weight: 700; color: var(--violet-dark); }
 .hours tr:last-child td { border-bottom: none; }
+.infos__address { margin-top: 18px; }
 .infos__address p { line-height: 1.6; margin: 6px 0 0; }
+.infos__address a { color: var(--red); font-weight: 700; }
 .infos__actions { display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
 .infos__map { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 6px solid #fff; }
 .infos__map iframe { width: 100%; height: 100%; min-height: 360px; border: 0; }

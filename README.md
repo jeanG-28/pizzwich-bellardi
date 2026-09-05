@@ -5,9 +5,11 @@ Site vitrine statique (HTML / CSS / JS, sans framework) pour le restaurant **Piz
 ## Informations sources
 
 - Adresse : 28 Rue de la Porte Morard, 28000 Chartres
+- Téléphone : 02 37 31 95 91
 - Note : 4,1/5 (68 avis Google)
 - Horaires : Lun–Ven 11h–14h / 18h–23h · Sam–Dim 11h–14h / 18h–01h
 - Livraison : Uber Eats & Deliveroo (~32 min)
+- Prix indicatifs (relevés sur les plateformes de livraison) : voir tableau "Quelques prix" sur le site
 
 ## Structure
 
