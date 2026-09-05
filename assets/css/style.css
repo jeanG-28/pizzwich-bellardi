@@ -18,7 +18,7 @@
   --muted: #8b7f94;
   --radius: 14px;
   --shadow: 0 12px 30px rgba(44, 10, 61, 0.18);
-  --font-display: 'Anton', 'Poppins', sans-serif;
+  --font-display: 'Titan One', 'Anton', 'Poppins', sans-serif;
   --font-body: 'Poppins', system-ui, sans-serif;
 }
 
@@ -106,13 +106,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: flex; align-items: center; gap: 24px;
 }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand__mark {
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--cream); color: var(--red);
-  font-family: var(--font-display); font-size: 1.1rem;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0; border: 3px solid #fff;
-}
+.brand__logo { width: 48px; height: 48px; flex-shrink: 0; display: block; }
 .brand__text {
   font-family: var(--font-display);
   color: #fff; text-transform: uppercase;
@@ -150,6 +144,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero__deco--4 { bottom: 6%; right: 14%; transform: rotate(-8deg); }
 .hero__deco--5 { bottom: 2%; left: 45%; font-size: 4rem; transform: rotate(15deg); }
 .hero__inner { position: relative; max-width: 780px; margin: 0 auto; text-align: center; }
+.hero__logo { width: 150px; height: 150px; margin: 0 auto 18px; display: block; filter: drop-shadow(0 10px 20px rgba(0,0,0,.25)); }
 
 .tag {
   display: inline-block; padding: 7px 16px; border-radius: 999px;
