@@ -13,33 +13,33 @@ nav.querySelectorAll('a').forEach((link) => {
 });
 
 // Open / closed status based on real opening hours
-// Mon-Fri: 11:00-14:00 & 18:00-23:00 | Sat-Sun: 11:00-14:00 & 18:00-01:00
+// Mon-Fri: 11:30-14:30 & 18:00-02:00 | Sat-Sun: 18:00-02:00 only (no lunch service)
 function computeStatus() {
   const now = new Date();
-  const day = now.getDay(); // 0 = Sunday
+  const day = now.getDay(); // 0 = Sunday, 6 = Saturday
   const minutes = now.getHours() * 60 + now.getMinutes();
 
   const isWeekend = day === 0 || day === 6;
-  const lunchStart = 11 * 60;
-  const lunchEnd = 14 * 60;
+  const lunchStart = 11 * 60 + 30;
+  const lunchEnd = 14 * 60 + 30;
   const dinnerStart = 18 * 60;
-  const dinnerEnd = isWeekend ? 25 * 60 : 23 * 60; // 01:00 next day for weekends
+  const dinnerEnd = 26 * 60; // 02:00 next day
 
-  const isLunch = minutes >= lunchStart && minutes < lunchEnd;
+  const isLunch = !isWeekend && minutes >= lunchStart && minutes < lunchEnd;
   const isDinner = minutes >= dinnerStart && minutes < dinnerEnd;
-  const isEarlyMorningWeekend = isWeekend === false && day === 1 ? false : minutes < 60 && (day === 0 || day === 6); // after midnight until 1am on Sat/Sun service
+  const isAfterMidnight = minutes < 2 * 60; // service continues from previous evening until 2am
 
-  const open = isLunch || isDinner || isEarlyMorningWeekend;
+  const open = isLunch || isDinner || isAfterMidnight;
 
   const el = document.getElementById('openStatus');
   if (open) {
     el.textContent = isLunch ? '🟢 Ouvert — service du midi' : '🟢 Ouvert — service du soir';
-  } else if (minutes < lunchStart) {
-    el.textContent = `🔴 Fermé — ouvre à 11h00`;
-  } else if (minutes >= lunchEnd && minutes < dinnerStart) {
+  } else if (!isWeekend && minutes < lunchStart) {
+    el.textContent = `🔴 Fermé — ouvre à 11h30`;
+  } else if ((isWeekend && minutes < dinnerStart) || (!isWeekend && minutes >= lunchEnd && minutes < dinnerStart)) {
     el.textContent = `🔴 Fermé — réouvre à 18h00`;
   } else {
-    el.textContent = `🔴 Fermé — ouvre à 11h00`;
+    el.textContent = `🔴 Fermé`;
   }
 }
 computeStatus();
