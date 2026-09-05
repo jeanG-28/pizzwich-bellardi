@@ -7,7 +7,7 @@
 <meta name="description" content="Pizz'Wich Bellardi, restaurant à emporter et en livraison à Chartres (centre-ville). Pizzas, tacos, burgers, sandwichs, kebabs et crêpes halal. Commande sur Uber Eats & Deliveroo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Anton&family=Roboto+Slab:wght@700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍕</text></svg>">
 </head>
@@ -16,52 +16,83 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="pwLogo" viewBox="0 0 240 240">
-      <path id="pwTopArc" d="M 32,102 A 100,100 0 0 1 208,102" fill="none"/>
-      <path id="pwBottomArc" d="M 206,150 A 96,96 0 0 1 34,150" fill="none"/>
+      <path id="pwTopArc" d="M 26,108 A 104,104 0 0 1 214,108" fill="none"/>
+      <path id="pwBottomArc" d="M 214,158 A 100,100 0 0 1 26,158" fill="none"/>
 
-      <circle cx="120" cy="120" r="114" fill="#fffaf0" stroke="#141014" stroke-width="5"/>
-      <circle cx="120" cy="120" r="101" fill="none" stroke="#141014" stroke-width="2"/>
+      <!-- double thin ring border -->
+      <circle cx="120" cy="120" r="118" fill="#fdfaf3" stroke="#191414" stroke-width="2"/>
+      <circle cx="120" cy="120" r="112" fill="none" stroke="#191414" stroke-width="1"/>
 
-      <!-- steam swirls -->
-      <g fill="none" stroke="#141014" stroke-width="2.5" stroke-linecap="round">
-        <path d="M62,95 C58,85 68,80 64,70 C60,60 70,55 66,45"/>
-        <path d="M80,88 C76,78 86,73 82,63 C78,53 88,48 84,38"/>
-        <path d="M178,95 C174,85 184,80 180,70 C176,60 186,55 182,45"/>
-        <path d="M160,88 C156,78 166,73 162,63 C158,53 168,48 164,38"/>
+      <!-- steam swirls, both sides -->
+      <g fill="none" stroke="#191414" stroke-width="1.6" stroke-linecap="round">
+        <path d="M46,150 C40,138 52,132 46,120 C40,108 52,102 46,90 C40,78 52,72 46,60"/>
+        <path d="M62,140 C56,128 68,122 62,110 C56,98 68,92 62,80 C56,68 68,62 62,50"/>
+        <path d="M78,132 C72,120 84,114 78,102 C72,90 84,84 78,72 C72,60 84,54 78,44"/>
+        <path d="M194,150 C200,138 188,132 194,120 C200,108 188,102 194,90 C200,78 188,72 194,60"/>
+        <path d="M178,140 C184,128 172,122 178,110 C184,98 172,92 178,80 C184,68 172,62 178,50"/>
+        <path d="M162,132 C168,120 156,114 162,102 C168,90 156,84 162,72 C168,60 156,54 162,44"/>
       </g>
 
-      <!-- mini pizzas under hands -->
-      <g>
-        <ellipse cx="66" cy="182" rx="26" ry="10" fill="#f2c14e" stroke="#141014" stroke-width="2.5"/>
-        <circle cx="56" cy="180" r="2.6" fill="#141014"/>
-        <circle cx="68" cy="184" r="2.6" fill="#141014"/>
-        <circle cx="78" cy="179" r="2.6" fill="#141014"/>
-        <ellipse cx="174" cy="182" rx="26" ry="10" fill="#f2c14e" stroke="#141014" stroke-width="2.5"/>
-        <circle cx="164" cy="180" r="2.6" fill="#141014"/>
-        <circle cx="176" cy="184" r="2.6" fill="#141014"/>
-        <circle cx="186" cy="179" r="2.6" fill="#141014"/>
+      <!-- two pizzas held low, line-art only -->
+      <g fill="none" stroke="#191414" stroke-width="1.8">
+        <ellipse cx="70" cy="176" rx="46" ry="17"/>
+        <ellipse cx="72" cy="169" rx="6" ry="3"/>
+        <ellipse cx="55" cy="174" rx="5.5" ry="3"/>
+        <ellipse cx="88" cy="172" rx="5.5" ry="3"/>
+        <ellipse cx="42" cy="180" rx="5" ry="2.8"/>
+        <ellipse cx="100" cy="181" rx="5" ry="2.8"/>
+        <ellipse cx="66" cy="184" rx="5.5" ry="3"/>
+        <path d="M60,167 q4,-3 8,0"/>
+
+        <ellipse cx="170" cy="176" rx="46" ry="17"/>
+        <ellipse cx="168" cy="169" rx="6" ry="3"/>
+        <ellipse cx="185" cy="174" rx="5.5" ry="3"/>
+        <ellipse cx="152" cy="172" rx="5.5" ry="3"/>
+        <ellipse cx="198" cy="180" rx="5" ry="2.8"/>
+        <ellipse cx="140" cy="181" rx="5" ry="2.8"/>
+        <ellipse cx="174" cy="184" rx="5.5" ry="3"/>
+        <path d="M180,167 q4,-3 8,0"/>
       </g>
 
-      <!-- chef body -->
-      <path d="M84,196 Q120,182 156,196 L162,215 Q120,228 78,215 Z" fill="#ffffff" stroke="#141014" stroke-width="3"/>
-      <path d="M108,178 Q120,186 132,178 L134,196 Q120,202 106,196 Z" fill="#f4c9a0" stroke="#141014" stroke-width="2.5"/>
+      <!-- arms reaching down to the pizza edges -->
+      <path d="M92,146 Q70,158 66,170" fill="none" stroke="#191414" stroke-width="2"/>
+      <path d="M148,146 Q170,158 176,168" fill="none" stroke="#191414" stroke-width="2"/>
+      <!-- right hand fingers gripping the pizza edge -->
+      <g fill="none" stroke="#191414" stroke-width="1.4" stroke-linecap="round">
+        <path d="M170,168 q3,5 1,9"/>
+        <path d="M176,166 q3,5 1,10"/>
+        <path d="M182,166 q3,4 1,9"/>
+        <path d="M188,168 q2,4 0,8"/>
+      </g>
+
+      <!-- chef body / coat -->
+      <path d="M82,152 Q120,140 158,152 L164,178 Q120,192 76,178 Z" fill="#fdfaf3" stroke="#191414" stroke-width="2"/>
+      <!-- neckerchief -->
+      <path d="M104,144 L120,158 L136,144" fill="none" stroke="#191414" stroke-width="1.8"/>
+      <path d="M117,155 q3,4 6,0" fill="none" stroke="#191414" stroke-width="1.4"/>
 
       <!-- chef head -->
-      <circle cx="120" cy="150" r="26" fill="#f4c9a0" stroke="#141014" stroke-width="3"/>
-      <circle cx="111" cy="148" r="2.2" fill="#141014"/>
-      <circle cx="129" cy="148" r="2.2" fill="#141014"/>
-      <path d="M106,160 Q113,155 120,160 Q127,155 134,160" fill="none" stroke="#141014" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M133,156 Q140,152 142,158" fill="none" stroke="#141014" stroke-width="1.5"/>
+      <circle cx="120" cy="122" r="24" fill="#fdfaf3" stroke="#191414" stroke-width="2"/>
+      <path d="M99,116 q4,-4 9,-2" fill="none" stroke="#191414" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M132,114 q5,-2 9,2" fill="none" stroke="#191414" stroke-width="1.4" stroke-linecap="round"/>
+      <circle cx="107" cy="121" r="1.8" fill="#191414"/>
+      <circle cx="134" cy="121" r="1.8" fill="#191414"/>
+      <!-- handlebar moustache -->
+      <path d="M100,131 Q108,126 120,130 Q132,126 140,131 Q136,138 128,134 Q120,140 112,134 Q104,138 100,131 Z" fill="#191414"/>
+      <path d="M108,161 q6,4 12,0" fill="none" stroke="#191414" stroke-width="1.6" stroke-linecap="round"/>
 
-      <!-- chef hat -->
-      <path d="M96,132 Q94,104 120,100 Q146,104 144,132 Q120,124 96,132 Z" fill="#ffffff" stroke="#141014" stroke-width="3"/>
-      <rect x="98" y="126" width="44" height="14" rx="5" fill="#ffffff" stroke="#141014" stroke-width="3"/>
+      <!-- chef hat: poofy toque with fold lines -->
+      <path d="M92,104 Q88,66 120,60 Q152,66 148,104 Q134,96 120,100 Q106,96 92,104 Z" fill="#fdfaf3" stroke="#191414" stroke-width="2"/>
+      <path d="M104,72 Q108,90 102,100" fill="none" stroke="#191414" stroke-width="1.2"/>
+      <path d="M120,66 Q122,86 118,100" fill="none" stroke="#191414" stroke-width="1.2"/>
+      <path d="M136,72 Q132,90 138,100" fill="none" stroke="#191414" stroke-width="1.2"/>
+      <rect x="96" y="98" width="48" height="15" rx="6" fill="#fdfaf3" stroke="#191414" stroke-width="2"/>
 
-      <text font-family="'Titan One','Anton',sans-serif" font-size="34" letter-spacing="1">
-        <textPath href="#pwTopArc" startOffset="50%" text-anchor="middle" fill="#e2231a">PIZZ'WICH</textPath>
+      <text font-family="'Roboto Slab', serif" font-weight="800" font-size="30" letter-spacing="1">
+        <textPath href="#pwTopArc" startOffset="50%" text-anchor="middle" fill="#9c3b30">PIZZ'WICH</textPath>
       </text>
-      <text font-family="'Titan One','Anton',sans-serif" font-size="30" letter-spacing="1">
-        <textPath href="#pwBottomArc" startOffset="50%" text-anchor="middle" fill="#1f8a4c">BELLARDI</textPath>
+      <text font-family="'Anton', sans-serif" font-size="32" letter-spacing="1.5">
+        <textPath href="#pwBottomArc" startOffset="50%" text-anchor="middle" fill="#1f7a3d">BELLARDI</textPath>
       </text>
     </symbol>
   </defs>
