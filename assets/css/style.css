@@ -106,7 +106,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: flex; align-items: center; gap: 24px;
 }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand__logo { width: 48px; height: 48px; flex-shrink: 0; display: block; }
+.brand__logo { width: 48px; height: 48px; flex-shrink: 0; display: block; border-radius: 50%; object-fit: cover; }
 .brand__text {
   font-family: var(--font-display);
   color: #fff; text-transform: uppercase;
@@ -144,7 +144,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero__deco--4 { bottom: 6%; right: 14%; transform: rotate(-8deg); }
 .hero__deco--5 { bottom: 2%; left: 45%; font-size: 4rem; transform: rotate(15deg); }
 .hero__inner { position: relative; max-width: 780px; margin: 0 auto; text-align: center; }
-.hero__logo { width: 150px; height: 150px; margin: 0 auto 18px; display: block; filter: drop-shadow(0 10px 20px rgba(0,0,0,.25)); }
+.hero__logo { width: 150px; height: 150px; margin: 0 auto 18px; display: block; border-radius: 50%; object-fit: cover; filter: drop-shadow(0 10px 20px rgba(0,0,0,.25)); }
 
 .tag {
   display: inline-block; padding: 7px 16px; border-radius: 999px;
